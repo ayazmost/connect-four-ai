@@ -1,4 +1,4 @@
-#connect-four-ai
+# connect-four-ai
 
 This repository contains the Connect 4 AI I made for the final project of my Computer Science 2 course. 
 The AiyazAgent.java file contains my code for the AI and the rest of the code (GUI and API) was provided by my instructor. 
