@@ -30,12 +30,12 @@ public class AiyazAgent extends Agent {
         }
         int index = 0;
         float max = Float.NEGATIVE_INFINITY;
+        int minDepth = DEPTH;
         for (int i = 0; i < columns; i++) {
             if (blankSpots[i] == -1) {
                 if (index == i) index++;
                 continue;
             }
-            int minDepth = DEPTH;
             add(matrix, i, self);
             Object[] temp = minimax(matrix, DEPTH, Float.NEGATIVE_INFINITY, Float.POSITIVE_INFINITY, false);
             remove(matrix, i);
